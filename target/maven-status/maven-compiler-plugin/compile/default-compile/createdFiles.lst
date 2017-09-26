@@ -1,5 +1,0 @@
-com/kalyan/cucumber/utils/JiraInteraction.class
-com/kalyan/cucumber/api/RestApiCalls.class
-com/kalyan/cucumber/utils/GetSystemProperties.class
-com/kalyan/cucumber/utils/UnzipFile.class
-com/kalyan/cucumber/utils/PreRun.class
