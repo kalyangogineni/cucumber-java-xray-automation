@@ -1,9 +1,18 @@
 package com.kalyan.cucumber.utils;
 
+import com.jayway.restassured.RestAssured;
+import com.jayway.restassured.config.EncoderConfig;
+import com.jayway.restassured.config.RestAssuredConfig;
+import com.jayway.restassured.config.SSLConfig;
+import com.jayway.restassured.http.ContentType;
+import org.json.JSONObject;
+import org.json.simple.JSONArray;
+import org.json.simple.parser.JSONParser;
 
 import java.io.*;
 import java.net.URL;
 import java.net.URLConnection;
+
 import static com.jayway.restassured.RestAssured.given;
 
 /**
@@ -19,10 +28,25 @@ public class JiraInteraction {
 
     }
 
-    public void importResults(String auth, String jiraUrl, String testResultdir) {
-        String currentDir = System.getProperty("user,dir");
-        com.jayway.restassured.response.Response response = given().multiPart("file",new File(currentDir+"/"+testResultdir))
+    public void importResults(String auth, String jiraUrl, String testResultdir) throws Exception {
 
+        String uploadFiledir = System.getProperty("user.dir")+"/"+testResultdir;
+        System.out.println("################################# uploading file"+uploadFiledir);
+        org.json.simple.parser.JSONParser parser = new JSONParser();
+        Object jsonBody = parser.parse(new FileReader(uploadFiledir));
+        System.out.println(jsonBody);
+        JSONArray obj = (org.json.simple.JSONArray) jsonBody;
+        String json = obj.toString();
+        try {
+            com.jayway.restassured.response.Response response = given().config(RestAssuredConfig.config().sslConfig(SSLConfig.sslConfig().allowAllHostnames()))
+                    .relaxedHTTPSValidation().contentType("application/json").header("Authorization", "Basic " + auth)
+                    .body(json).expect().statusCode(200)
+                    .when()
+                    .post(jiraUrl + "/rest/raven/1.0/import/execution/cucumber").then().extract().response();
+            System.out.println("#################"+ response.asString());
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
     private static void downloadUsingStream(String urlStr, String auth, String file) throws Exception{
@@ -58,6 +82,6 @@ public class JiraInteraction {
 
         }
 
-
     }
+
 }

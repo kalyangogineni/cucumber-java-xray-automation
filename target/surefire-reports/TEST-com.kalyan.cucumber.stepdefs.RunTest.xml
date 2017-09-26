@@ -1,0 +1,968 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="84" failures="0" name="com.kalyan.cucumber.stepdefs.RunTest" time="0.493" errors="5" skipped="67">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.74-b02"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/kgogin1/Documents/projects/myopensource-contribution/cucumber-java-xray-automation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/kgogin1/Documents/projects/myopensource-contribution/cucumber-java-xray-automation"/>
+    <property name="java.runtime.version" value="1.8.0_74-b02"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/n1/697g2c4s469bg14n_fgr26qcm4s4xw/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Users/kgogin1/Documents/apache-maven-3.3.9/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/kgogin1/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.10.5"/>
+    <property name="user.home" value="/Users/kgogin1"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="jiraTestExecutionId" value="AIRE-148"/>
+    <property name="user.name" value="kgogin1"/>
+    <property name="java.class.path" value="/Users/kgogin1/Documents/apache-maven-3.3.9/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean verify -DjiraUrl=https://tracker.wal-mart.com -DAuthorization=a2dvZ2luMTpWYW5pQDEyMzQ1 -DjiraTestExecutionId=AIRE-148"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_74"/>
+    <property name="java.ext.dirs" value="/Users/kgogin1/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/classes"/>
+    <property name="Authorization" value="a2dvZ2luMTpWYW5pQDEyMzQ1"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Users/kgogin1/Documents/apache-maven-3.3.9"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="jiraUrl" value="https://tracker.wal-mart.com"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="Scenario: To retrieve on Hands Quanity for a store in which request UPC which does not exist" name="Given &quot;On Hand System&quot; is  up and running" time="0.034">
+    <skipped/>
+    <system-out>/Users/kgogin1/Documents/projects/myopensource-contribution/cucumber-java-xray-automation
+@AIRE-148 @AIRE-43
+Feature: Data Collector for &quot;On Hand&quot; data attribute
+</system-out>
+  </testcase>
+  <testcase classname="Scenario: To retrieve on Hands Quanity for a store in which request UPC which does not exist" name="When User retrieves data from &quot;upc&quot; with" time="0.035">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve on Hands Quanity for a store in which request UPC which does not exist" name="Then Application should respond with reason code &quot;502&quot;" time="0.035">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve on Hands Quanity for a store in which request UPC which does not exist" name="Scenario: To retrieve on Hands Quanity for a store in which request UPC which does not exist" time="0.035">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve on Hands Quanity for a store in which request UPC which does not exist" name="Scenario: To retrieve on Hands Quanity for a store in which request UPC which does not exist" time="0.035"/>
+  <testcase classname="Scenario: To retrieve On Hand Quantity for a Store for which on hand system gives 500 Error response" name="Given &quot;On Hand System&quot; is  up and running" time="0.004">
+    <skipped/>
+    <system-out>
+  #UPC &quot;3400056&quot; under a store 100 does not exist.
+  @AIRE-91 @AIRE-87
+  Scenario: To retrieve on Hands Quanity for a store in which request UPC which does not exist &amp;#27;[90m# 1_AIRE-43.feature:7&amp;#27;[0m
+    &amp;#27;[33mGiven &amp;#27;[0m&amp;#27;[33m&quot;On Hand System&quot; is  up and running&amp;#27;[0m
+    &amp;#27;[33mWhen &amp;#27;[0m&amp;#27;[33mUser retrieves data from &quot;upc&quot; with&amp;#27;[0m
+    &amp;#27;[33mThen &amp;#27;[0m&amp;#27;[33mApplication should respond with reason code &quot;502&quot;&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="Scenario: To retrieve On Hand Quantity for a Store for which on hand system gives 500 Error response" name="When User retrieves data from &quot;upc&quot; with" time="0.005">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve On Hand Quantity for a Store for which on hand system gives 500 Error response" name="Then Application should respond with reason code &quot;502&quot;" time="0.005">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve On Hand Quantity for a Store for which on hand system gives 500 Error response" name="Scenario: To retrieve On Hand Quantity for a Store for which on hand system gives 500 Error response" time="0.006">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve On Hand Quantity for a Store for which on hand system gives 500 Error response" name="Scenario: To retrieve On Hand Quantity for a Store for which on hand system gives 500 Error response" time="0.006"/>
+  <testcase classname="Scenario: To retrieve onHands Quanity for a UPC when the Quantity of a UPC is in negative" name="Given &quot;OnHands Inventory&quot; is  up and running" time="0.003">
+    <skipped/>
+    <system-out>
+  #for Store 500, on hand system responds with 500 Error
+  @AIRE-92 @AIRE-87
+  Scenario: To retrieve On Hand Quantity for a Store for which on hand system gives 500 Error response &amp;#27;[90m# 1_AIRE-43.feature:20&amp;#27;[0m
+    &amp;#27;[33mGiven &amp;#27;[0m&amp;#27;[33m&quot;On Hand System&quot; is  up and running&amp;#27;[0m
+    &amp;#27;[33mWhen &amp;#27;[0m&amp;#27;[33mUser retrieves data from &quot;upc&quot; with&amp;#27;[0m
+    &amp;#27;[33mThen &amp;#27;[0m&amp;#27;[33mApplication should respond with reason code &quot;502&quot;&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="Scenario: To retrieve onHands Quanity for a UPC when the Quantity of a UPC is in negative" name="When User retrieves data from &quot;upc&quot; with" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve onHands Quanity for a UPC when the Quantity of a UPC is in negative" name="Then Application should respond with reason code &quot;200&quot;" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve onHands Quanity for a UPC when the Quantity of a UPC is in negative" name="And Response should contain" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve onHands Quanity for a UPC when the Quantity of a UPC is in negative" name="And Application should respond back with valid &quot;MediaType&quot;" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve onHands Quanity for a UPC when the Quantity of a UPC is in negative" name="Scenario: To retrieve onHands Quanity for a UPC when the Quantity of a UPC is in negative" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve onHands Quanity for a UPC when the Quantity of a UPC is in negative" name="Scenario: To retrieve onHands Quanity for a UPC when the Quantity of a UPC is in negative" time="0.005"/>
+  <testcase classname="Scenario: To retrieve On Hand quantity for a store and down stream system timesout." name="Given &quot;On Hand System&quot; is  up and running" time="0.003">
+    <skipped/>
+    <system-out>
+  @AIRE-101 @AIRE-87
+  Scenario: To retrieve onHands Quanity for a UPC when the Quantity of a UPC is in negative &amp;#27;[90m# 1_AIRE-43.feature:32&amp;#27;[0m
+    ## OnHand Quantity is set to -1 in mock
+    &amp;#27;[33mGiven &amp;#27;[0m&amp;#27;[33m&quot;OnHands Inventory&quot; is  up and running&amp;#27;[0m
+    &amp;#27;[33mWhen &amp;#27;[0m&amp;#27;[33mUser retrieves data from &quot;upc&quot; with&amp;#27;[0m
+    &amp;#27;[33mThen &amp;#27;[0m&amp;#27;[33mApplication should respond with reason code &quot;200&quot;&amp;#27;[0m
+    &amp;#27;[33mAnd &amp;#27;[0m&amp;#27;[33mResponse should contain&amp;#27;[0m
+    &amp;#27;[33mAnd &amp;#27;[0m&amp;#27;[33mApplication should respond back with valid &quot;MediaType&quot;&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="Scenario: To retrieve On Hand quantity for a store and down stream system timesout." name="When User retrieves data from &quot;upc&quot; with" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve On Hand quantity for a store and down stream system timesout." name="Then Application should respond with reason code &quot;502&quot;" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve On Hand quantity for a store and down stream system timesout." name="Scenario: To retrieve On Hand quantity for a store and down stream system timesout." time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve On Hand quantity for a store and down stream system timesout." name="Scenario: To retrieve On Hand quantity for a store and down stream system timesout." time="0.004"/>
+  <testcase classname="Scenario: To retrieve a invalid attribute from a store which is not defined" name="Given &quot;Store&quot; is  up and running" time="0.003">
+    <skipped/>
+    <system-out>
+  #for Store 108, downstream system delays the response for 6 sec which causes data service to cause timeout.
+  @AIRE-95 @AIRE-87
+  Scenario: To retrieve On Hand quantity for a store and down stream system timesout. &amp;#27;[90m# 1_AIRE-43.feature:49&amp;#27;[0m
+    &amp;#27;[33mGiven &amp;#27;[0m&amp;#27;[33m&quot;On Hand System&quot; is  up and running&amp;#27;[0m
+    &amp;#27;[33mWhen &amp;#27;[0m&amp;#27;[33mUser retrieves data from &quot;upc&quot; with&amp;#27;[0m
+    &amp;#27;[33mThen &amp;#27;[0m&amp;#27;[33mApplication should respond with reason code &quot;502&quot;&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="Scenario: To retrieve a invalid attribute from a store which is not defined" name="When User retrieves data from &quot;upc&quot; with" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve a invalid attribute from a store which is not defined" name="Then Application should respond with reason code &quot;400&quot;" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve a invalid attribute from a store which is not defined" name="Scenario: To retrieve a invalid attribute from a store which is not defined" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve a invalid attribute from a store which is not defined" name="Scenario: To retrieve a invalid attribute from a store which is not defined" time="0.004"/>
+  <testcase classname="Scenario: To retrieve On Hand Order quantity for a store and UPC for which downstream only responds back with only claim status." name="Given &quot;OnHands Inventory&quot; is  up and running" time="0.006">
+    <skipped/>
+    <system-out>
+  @AIRE-118 @AIRE-87
+  Scenario: To retrieve a invalid attribute from a store which is not defined &amp;#27;[90m# 1_AIRE-43.feature:62&amp;#27;[0m
+    &amp;#27;[33mGiven &amp;#27;[0m&amp;#27;[33m&quot;Store&quot; is  up and running&amp;#27;[0m
+    &amp;#27;[33mWhen &amp;#27;[0m&amp;#27;[33mUser retrieves data from &quot;upc&quot; with&amp;#27;[0m
+    &amp;#27;[33mThen &amp;#27;[0m&amp;#27;[33mApplication should respond with reason code &quot;400&quot;&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="Scenario: To retrieve On Hand Order quantity for a store and UPC for which downstream only responds back with only claim status." name="When User retrieves data from &quot;upc&quot; with" time="0.006">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve On Hand Order quantity for a store and UPC for which downstream only responds back with only claim status." name="Then Application should respond with reason code &quot;200&quot;" time="0.007">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve On Hand Order quantity for a store and UPC for which downstream only responds back with only claim status." name="And Application should respond back with valid &quot;MediaType&quot;" time="0.007">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve On Hand Order quantity for a store and UPC for which downstream only responds back with only claim status." name="Scenario: To retrieve On Hand Order quantity for a store and UPC for which downstream only responds back with only claim status." time="0.008">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve On Hand Order quantity for a store and UPC for which downstream only responds back with only claim status." name="Scenario: To retrieve On Hand Order quantity for a store and UPC for which downstream only responds back with only claim status." time="0.008"/>
+  <testcase classname="Scenario: To retrieve OnHand orders for a store for which on hand system gives 404 in response" name="Given &quot;On Hand System&quot; is  up and running" time="0.003">
+    <skipped/>
+    <system-out>
+  #On Hand Inventory System only responds back with Claim status for a UPC &quot;340005600&quot; under a store 101
+  @AIRE-96 @AIRE-87
+  Scenario: To retrieve On Hand Order quantity for a store and UPC for which downstream only responds back with only claim status. &amp;#27;[90m# 1_AIRE-43.feature:72&amp;#27;[0m
+    &amp;#27;[33mGiven &amp;#27;[0m&amp;#27;[33m&quot;OnHands Inventory&quot; is  up and running&amp;#27;[0m
+    &amp;#27;[33mWhen &amp;#27;[0m&amp;#27;[33mUser retrieves data from &quot;upc&quot; with&amp;#27;[0m
+    &amp;#27;[33mThen &amp;#27;[0m&amp;#27;[33mApplication should respond with reason code &quot;200&quot;&amp;#27;[0m
+    &amp;#27;[33mAnd &amp;#27;[0m&amp;#27;[33mApplication should respond back with valid &quot;MediaType&quot;&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="Scenario: To retrieve OnHand orders for a store for which on hand system gives 404 in response" name="When User retrieves data from &quot;upc&quot; with" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve OnHand orders for a store for which on hand system gives 404 in response" name="Then Application should respond with reason code &quot;502&quot;" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve OnHand orders for a store for which on hand system gives 404 in response" name="Scenario: To retrieve OnHand orders for a store for which on hand system gives 404 in response" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve OnHand orders for a store for which on hand system gives 404 in response" name="Scenario: To retrieve OnHand orders for a store for which on hand system gives 404 in response" time="0.004"/>
+  <testcase classname="Scenario: To retrieve OnHand quantity and down stream system responds with 400 bad request" name="Given &quot;On Hand System&quot; is  up and running" time="0.002">
+    <skipped/>
+    <system-out>
+  #retrieving onhands from Store 404 , on hand system gives 404 response
+  @AIRE-93 @AIRE-87
+  Scenario: To retrieve OnHand orders for a store for which on hand system gives 404 in response &amp;#27;[90m# 1_AIRE-43.feature:84&amp;#27;[0m
+    &amp;#27;[33mGiven &amp;#27;[0m&amp;#27;[33m&quot;On Hand System&quot; is  up and running&amp;#27;[0m
+    &amp;#27;[33mWhen &amp;#27;[0m&amp;#27;[33mUser retrieves data from &quot;upc&quot; with&amp;#27;[0m
+    &amp;#27;[33mThen &amp;#27;[0m&amp;#27;[33mApplication should respond with reason code &quot;502&quot;&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="Scenario: To retrieve OnHand quantity and down stream system responds with 400 bad request" name="When User retrieves data from &quot;upc&quot; with" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve OnHand quantity and down stream system responds with 400 bad request" name="Then Application should respond with reason code &quot;502&quot;" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve OnHand quantity and down stream system responds with 400 bad request" name="Scenario: To retrieve OnHand quantity and down stream system responds with 400 bad request" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve OnHand quantity and down stream system responds with 400 bad request" name="Scenario: To retrieve OnHand quantity and down stream system responds with 400 bad request" time="0.003"/>
+  <testcase classname="Scenario: To retrieve onHands from a store for a UPC which have a quantity in decimals" name="Given &quot;On Hand System&quot; is  up and running" time="0.003">
+    <skipped/>
+    <system-out>
+  #For Store 400, Down stream system responds with 400 bad request
+  @AIRE-94 @AIRE-87
+  Scenario: To retrieve OnHand quantity and down stream system responds with 400 bad request &amp;#27;[90m# 1_AIRE-43.feature:96&amp;#27;[0m
+    &amp;#27;[33mGiven &amp;#27;[0m&amp;#27;[33m&quot;On Hand System&quot; is  up and running&amp;#27;[0m
+    &amp;#27;[33mWhen &amp;#27;[0m&amp;#27;[33mUser retrieves data from &quot;upc&quot; with&amp;#27;[0m
+    &amp;#27;[33mThen &amp;#27;[0m&amp;#27;[33mApplication should respond with reason code &quot;502&quot;&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="Scenario: To retrieve onHands from a store for a UPC which have a quantity in decimals" name="When User retrieves data from &quot;upc&quot; with" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve onHands from a store for a UPC which have a quantity in decimals" name="Then Application should respond with reason code &quot;200&quot;" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve onHands from a store for a UPC which have a quantity in decimals" name="And Response should contain" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve onHands from a store for a UPC which have a quantity in decimals" name="And Application should respond back with valid &quot;MediaType&quot;" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve onHands from a store for a UPC which have a quantity in decimals" name="Scenario: To retrieve onHands from a store for a UPC which have a quantity in decimals" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve onHands from a store for a UPC which have a quantity in decimals" name="Scenario: To retrieve onHands from a store for a UPC which have a quantity in decimals" time="0.004"/>
+  <testcase classname="Scenario: To retrieve onHands Quanity from UPC with valid data" name="Given &quot;OnHands Inventory&quot; is  up and running" time="0.003">
+    <skipped/>
+    <system-out>
+  #The Quantity of UPC in a store is 0.2
+  @AIRE-117 @AIRE-87
+  Scenario: To retrieve onHands from a store for a UPC which have a quantity in decimals &amp;#27;[90m# 1_AIRE-43.feature:109&amp;#27;[0m
+    ## On hand system return 0.2 as quanity value
+    &amp;#27;[33mGiven &amp;#27;[0m&amp;#27;[33m&quot;On Hand System&quot; is  up and running&amp;#27;[0m
+    &amp;#27;[33mWhen &amp;#27;[0m&amp;#27;[33mUser retrieves data from &quot;upc&quot; with&amp;#27;[0m
+    &amp;#27;[33mThen &amp;#27;[0m&amp;#27;[33mApplication should respond with reason code &quot;200&quot;&amp;#27;[0m
+    &amp;#27;[33mAnd &amp;#27;[0m&amp;#27;[33mResponse should contain&amp;#27;[0m
+    &amp;#27;[33mAnd &amp;#27;[0m&amp;#27;[33mApplication should respond back with valid &quot;MediaType&quot;&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="Scenario: To retrieve onHands Quanity from UPC with valid data" name="When User retrieves data from &quot;upc&quot; with" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve onHands Quanity from UPC with valid data" name="Then Application should respond with reason code &quot;200&quot;" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve onHands Quanity from UPC with valid data" name="And Application should respond with valid response message" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve onHands Quanity from UPC with valid data" name="And Response should contain" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve onHands Quanity from UPC with valid data" name="And Response should contain" time="0.005">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve onHands Quanity from UPC with valid data" name="And Application should respond back with valid &quot;MediaType&quot;" time="0.005">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve onHands Quanity from UPC with valid data" name="Scenario: To retrieve onHands Quanity from UPC with valid data" time="0.005">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve onHands Quanity from UPC with valid data" name="Scenario: To retrieve onHands Quanity from UPC with valid data" time="0.005"/>
+  <testcase classname="Scenario: To retrieve On Hand quantity from a store for UPC which have 0 available and 0 claim quanitity" name="Given &quot;OnHands Inventory&quot; is  up and running" time="0.004">
+    <skipped/>
+    <system-out>
+  #When we make a call to data service to retrieve on hand order under upc with valid store numbers and valid UPC
+  @AIRE-86 @AIRE-87
+  Scenario: To retrieve onHands Quanity from UPC with valid data &amp;#27;[90m# 1_AIRE-43.feature:125&amp;#27;[0m
+    &amp;#27;[33mGiven &amp;#27;[0m&amp;#27;[33m&quot;OnHands Inventory&quot; is  up and running&amp;#27;[0m
+    &amp;#27;[33mWhen &amp;#27;[0m&amp;#27;[33mUser retrieves data from &quot;upc&quot; with&amp;#27;[0m
+    &amp;#27;[33mThen &amp;#27;[0m&amp;#27;[33mApplication should respond with reason code &quot;200&quot;&amp;#27;[0m
+    &amp;#27;[33mAnd &amp;#27;[0m&amp;#27;[33mApplication should respond with valid response message&amp;#27;[0m
+    &amp;#27;[33mAnd &amp;#27;[0m&amp;#27;[33mResponse should contain&amp;#27;[0m
+    &amp;#27;[33mAnd &amp;#27;[0m&amp;#27;[33mResponse should contain&amp;#27;[0m
+    #{&quot;expiryTime&quot;=342423 , &quot;results&quot;:[{&quot;name&quot;:&quot;onHands&quot;,
+    # &quot;value&quot;:&quot;[{&quot;quantity&quot;:&quot;10&quot;,&quot;location&quot;:&quot;SALESFLOOR&quot;}]&quot;,
+    #&quot;ttlInMilliseconds&quot;:20000}]}
+    &amp;#27;[33mAnd &amp;#27;[0m&amp;#27;[33mApplication should respond back with valid &quot;MediaType&quot;&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="Scenario: To retrieve On Hand quantity from a store for UPC which have 0 available and 0 claim quanitity" name="When User retrieves data from &quot;upc&quot; with" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve On Hand quantity from a store for UPC which have 0 available and 0 claim quanitity" name="Then Application should respond with reason code &quot;200&quot;" time="0.005">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve On Hand quantity from a store for UPC which have 0 available and 0 claim quanitity" name="And Response should contain" time="0.005">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve On Hand quantity from a store for UPC which have 0 available and 0 claim quanitity" name="And Application should respond back with valid &quot;MediaType&quot;" time="0.005">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve On Hand quantity from a store for UPC which have 0 available and 0 claim quanitity" name="Scenario: To retrieve On Hand quantity from a store for UPC which have 0 available and 0 claim quanitity" time="0.005">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve On Hand quantity from a store for UPC which have 0 available and 0 claim quanitity" name="Scenario: To retrieve On Hand quantity from a store for UPC which have 0 available and 0 claim quanitity" time="0.006"/>
+  <testcase classname="Scenario: To retrieve onHands Quanity from UPC with valid data" name="Given &quot;OnHands Inventory&quot; is  up and running" time="0.002">
+    <skipped/>
+    <system-out>
+  #For upc &quot;340005600&quot; Store 103 gives Zero on hand quanity
+  @AIRE-97 @AIRE-87
+  Scenario: To retrieve On Hand quantity from a store for UPC which have 0 available and 0 claim quanitity &amp;#27;[90m# 1_AIRE-43.feature:148&amp;#27;[0m
+    &amp;#27;[33mGiven &amp;#27;[0m&amp;#27;[33m&quot;OnHands Inventory&quot; is  up and running&amp;#27;[0m
+    &amp;#27;[33mWhen &amp;#27;[0m&amp;#27;[33mUser retrieves data from &quot;upc&quot; with&amp;#27;[0m
+    &amp;#27;[33mThen &amp;#27;[0m&amp;#27;[33mApplication should respond with reason code &quot;200&quot;&amp;#27;[0m
+    &amp;#27;[33mAnd &amp;#27;[0m&amp;#27;[33mResponse should contain&amp;#27;[0m
+    &amp;#27;[33mAnd &amp;#27;[0m&amp;#27;[33mApplication should respond back with valid &quot;MediaType&quot;&amp;#27;[0m
+@AIRE-148 @AIRE-99
+Feature: Create oneops environments for QA mock services - wiremock
+</system-out>
+  </testcase>
+  <testcase classname="Scenario: To retrieve onHands Quanity from UPC with valid data" name="When User retrieves data from &quot;upc&quot; with" time="0.002">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve onHands Quanity from UPC with valid data" name="Then Application should respond with reason code &quot;200&quot;" time="0.002">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve onHands Quanity from UPC with valid data" name="And Application should respond with valid response message" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve onHands Quanity from UPC with valid data" name="And Response should contain" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve onHands Quanity from UPC with valid data" name="And Response should contain" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve onHands Quanity from UPC with valid data" name="And Application should respond back with valid &quot;MediaType&quot;" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve onHands Quanity from UPC with valid data" name="Scenario: To retrieve onHands Quanity from UPC with valid data" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: To retrieve onHands Quanity from UPC with valid data" name="Scenario: To retrieve onHands Quanity from UPC with valid data" time="0.004"/>
+  <testcase classname="| test1 | pass1 |" name="When I request user information with test1 and pass1" time="0.003">
+    <error message="google.com: unknown error" type="java.net.UnknownHostException">java.net.UnknownHostException: google.com: unknown error
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:882)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:133)
+	at com.jayway.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:1974)
+	at com.jayway.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:492)
+	at com.jayway.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:441)
+	at com.jayway.restassured.internal.http.HTTPBuilder$request$2.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:141)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1396)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1210)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1178)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1210)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:149)
+	at com.jayway.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+	at com.jayway.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at com.jayway.restassured.filter.Filter$filter.call(Unknown Source)
+	at com.jayway.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
+	at com.jayway.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+	at com.jayway.restassured.filter.Filter$filter.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:141)
+	at com.jayway.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
+	at com.jayway.restassured.filter.FilterContext$next.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:133)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1596)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1210)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:160)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
+	at com.kalyan.cucumber.api.RestApiCalls.getCall(RestApiCalls.java:41)
+	at com.kalyan.cucumber.stepdefs.SearchStepDefs.GetUserInformation(SearchStepDefs.java:20)
+	at ✽.When I request user information with test1 and pass1(rest-api.feature:4)
+</error>
+    <system-out>
+  #Oneops environments for mock services used by QA
+  #When we make a call to data service to retrieve on hand order under upc with valid store numbers and valid UPC
+  @AIRE-86 @AIRE-87
+  Scenario: To retrieve onHands Quanity from UPC with valid data &amp;#27;[90m# 2_AIRE-99.feature:8&amp;#27;[0m
+    &amp;#27;[33mGiven &amp;#27;[0m&amp;#27;[33m&quot;OnHands Inventory&quot; is  up and running&amp;#27;[0m
+    &amp;#27;[33mWhen &amp;#27;[0m&amp;#27;[33mUser retrieves data from &quot;upc&quot; with&amp;#27;[0m
+    &amp;#27;[33mThen &amp;#27;[0m&amp;#27;[33mApplication should respond with reason code &quot;200&quot;&amp;#27;[0m
+    &amp;#27;[33mAnd &amp;#27;[0m&amp;#27;[33mApplication should respond with valid response message&amp;#27;[0m
+    &amp;#27;[33mAnd &amp;#27;[0m&amp;#27;[33mResponse should contain&amp;#27;[0m
+    &amp;#27;[33mAnd &amp;#27;[0m&amp;#27;[33mResponse should contain&amp;#27;[0m
+    #{&quot;expiryTime&quot;=342423 , &quot;results&quot;:[{&quot;name&quot;:&quot;onHands&quot;,
+    # &quot;value&quot;:&quot;[{&quot;quantity&quot;:&quot;10&quot;,&quot;location&quot;:&quot;SALESFLOOR&quot;}]&quot;,
+    #&quot;ttlInMilliseconds&quot;:20000}]}
+    &amp;#27;[33mAnd &amp;#27;[0m&amp;#27;[33mApplication should respond back with valid &quot;MediaType&quot;&amp;#27;[0m
+Feature: Test retrieval of user information
+
+  Scenario Outline: Retrive user information with valid username and password &amp;#27;[90m# rest-api.feature:3&amp;#27;[0m
+    &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mI request user information with &lt;username&gt; and &lt;password&gt;&amp;#27;[0m
+    &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI should get http respose code as 200&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI should get the valid response&amp;#27;[0m
+
+    Examples: 
+</system-out>
+  </testcase>
+  <testcase classname="| test1 | pass1 |" name="| test1 | pass1 |" time="0.004">
+    <error message="google.com: unknown error" type="java.net.UnknownHostException">java.net.UnknownHostException: google.com: unknown error
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:882)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:133)
+	at com.jayway.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:1974)
+	at com.jayway.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:492)
+	at com.jayway.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:441)
+	at com.jayway.restassured.internal.http.HTTPBuilder$request$2.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:141)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1396)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1210)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1178)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1210)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:149)
+	at com.jayway.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+	at com.jayway.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at com.jayway.restassured.filter.Filter$filter.call(Unknown Source)
+	at com.jayway.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
+	at com.jayway.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+	at com.jayway.restassured.filter.Filter$filter.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:141)
+	at com.jayway.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
+	at com.jayway.restassured.filter.FilterContext$next.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:133)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1596)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1210)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:160)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
+	at com.kalyan.cucumber.api.RestApiCalls.getCall(RestApiCalls.java:41)
+	at com.kalyan.cucumber.stepdefs.SearchStepDefs.GetUserInformation(SearchStepDefs.java:20)
+	at ✽.When I request user information with test1 and pass1(rest-api.feature:4)
+</error>
+  </testcase>
+  <testcase classname="| test1 | pass1 |" name="Then I should get http respose code as 200" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase classname="| test1 | pass1 |" name="And I should get the valid response" time="0.005">
+    <skipped/>
+  </testcase>
+  <testcase classname="| test2 | pass2 |" name="When I request user information with test2 and pass2" time="0">
+    <error message="google.com" type="java.net.UnknownHostException">java.net.UnknownHostException: google.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:882)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
+	at com.jayway.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:1974)
+	at com.jayway.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:492)
+	at com.jayway.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:441)
+	at com.jayway.restassured.internal.http.HTTPBuilder$request$2.call(Unknown Source)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1396)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1210)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1178)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1210)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:149)
+	at com.jayway.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+	at com.jayway.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at com.jayway.restassured.filter.Filter$filter.call(Unknown Source)
+	at com.jayway.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
+	at com.jayway.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+	at com.jayway.restassured.filter.Filter$filter.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at com.jayway.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at com.jayway.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
+	at com.jayway.restassured.filter.FilterContext$next.call(Unknown Source)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1596)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1210)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:160)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
+	at com.kalyan.cucumber.api.RestApiCalls.getCall(RestApiCalls.java:41)
+	at com.kalyan.cucumber.stepdefs.SearchStepDefs.GetUserInformation(SearchStepDefs.java:20)
+	at ✽.When I request user information with test2 and pass2(rest-api.feature:4)
+</error>
+    <system-out>
+  Scenario Outline: Retrive user information with valid username and password &amp;#27;[90m# rest-api.feature:10&amp;#27;[0m
+    &amp;#27;[31mWhen &amp;#27;[0m&amp;#27;[31mI request user information with &amp;#27;[0m&amp;#27;[31m&amp;#27;[1mtest1&amp;#27;[0m&amp;#27;[31m and &amp;#27;[0m&amp;#27;[31m&amp;#27;[1mpass1&amp;#27;[0m                      &amp;#27;[90m# SearchStepDefs.GetUserInformation(String,String)&amp;#27;[0m
+      &amp;#27;[31mjava.net.UnknownHostException: google.com: unknown error
+      	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+      	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+      	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+      	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+      	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+      	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+      	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+      	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+      	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+      	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+      	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+      	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+      	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:882)
+      	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+      	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+      	at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
+      	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+      	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+      	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:133)
+      	at com.jayway.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:1974)
+      	at com.jayway.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:492)
+      	at com.jayway.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:441)
+      	at com.jayway.restassured.internal.http.HTTPBuilder$request$2.call(Unknown Source)
+      	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+      	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+      	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:141)
+      	at com.jayway.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1396)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+      	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+      	at java.lang.reflect.Method.invoke(Method.java:498)
+      	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+      	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+      	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1210)
+      	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019)
+      	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)
+      	at com.jayway.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+      	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+      	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+      	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+      	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+      	at com.jayway.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1178)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+      	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+      	at java.lang.reflect.Method.invoke(Method.java:498)
+      	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+      	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+      	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1210)
+      	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019)
+      	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)
+      	at com.jayway.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+      	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+      	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+      	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+      	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:149)
+      	at com.jayway.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+      	at com.jayway.restassured.filter.Filter$filter$0.call(Unknown Source)
+      	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+      	at com.jayway.restassured.filter.Filter$filter.call(Unknown Source)
+      	at com.jayway.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
+      	at com.jayway.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+      	at com.jayway.restassured.filter.Filter$filter.call(Unknown Source)
+      	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+      	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+      	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:141)
+      	at com.jayway.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
+      	at com.jayway.restassured.filter.FilterContext$next.call(Unknown Source)
+      	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+      	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+      	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:133)
+      	at com.jayway.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1596)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+      	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+      	at java.lang.reflect.Method.invoke(Method.java:498)
+      	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+      	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+      	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1210)
+      	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019)
+      	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)
+      	at com.jayway.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+      	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+      	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+      	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+      	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+      	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
+      	at com.jayway.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:160)
+      	at com.jayway.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
+      	at com.kalyan.cucumber.api.RestApiCalls.getCall(RestApiCalls.java:41)
+      	at com.kalyan.cucumber.stepdefs.SearchStepDefs.GetUserInformation(SearchStepDefs.java:20)
+      	at ✽.When I request user information with test1 and pass1(rest-api.feature:4)
+      &amp;#27;[0m
+    &amp;#27;[33mThen &amp;#27;[0m&amp;#27;[33mI should get http respose code as 200&amp;#27;[0m
+    &amp;#27;[33mAnd &amp;#27;[0m&amp;#27;[33mI should get the valid response&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="| test2 | pass2 |" name="| test2 | pass2 |" time="0">
+    <error message="google.com" type="java.net.UnknownHostException">java.net.UnknownHostException: google.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:882)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
+	at com.jayway.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:1974)
+	at com.jayway.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:492)
+	at com.jayway.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:441)
+	at com.jayway.restassured.internal.http.HTTPBuilder$request$2.call(Unknown Source)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1396)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1210)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1178)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1210)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:149)
+	at com.jayway.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+	at com.jayway.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at com.jayway.restassured.filter.Filter$filter.call(Unknown Source)
+	at com.jayway.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
+	at com.jayway.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+	at com.jayway.restassured.filter.Filter$filter.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at com.jayway.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at com.jayway.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
+	at com.jayway.restassured.filter.FilterContext$next.call(Unknown Source)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1596)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1210)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:160)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
+	at com.kalyan.cucumber.api.RestApiCalls.getCall(RestApiCalls.java:41)
+	at com.kalyan.cucumber.stepdefs.SearchStepDefs.GetUserInformation(SearchStepDefs.java:20)
+	at ✽.When I request user information with test2 and pass2(rest-api.feature:4)
+</error>
+  </testcase>
+  <testcase classname="| test2 | pass2 |" name="Then I should get http respose code as 200" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="| test2 | pass2 |" name="And I should get the valid response" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.kalyan.cucumber.stepdefs.RunTest" name="com.kalyan.cucumber.stepdefs.RunTest" time="0.015">
+    <error type="Unexpected">Unexpected token END OF FILE at position 0.
+	at org.json.simple.parser.JSONParser.parse(JSONParser.java:257)
+	at org.json.simple.parser.JSONParser.parse(JSONParser.java:92)
+	at com.kalyan.cucumber.utils.JiraInteraction.importResults(JiraInteraction.java:38)
+	at com.kalyan.cucumber.stepdefs.RunTest.uploadResults(RunTest.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>
+  Scenario Outline: Retrive user information with valid username and password &amp;#27;[90m# rest-api.feature:11&amp;#27;[0m
+    &amp;#27;[31mWhen &amp;#27;[0m&amp;#27;[31mI request user information with &amp;#27;[0m&amp;#27;[31m&amp;#27;[1mtest2&amp;#27;[0m&amp;#27;[31m and &amp;#27;[0m&amp;#27;[31m&amp;#27;[1mpass2&amp;#27;[0m                      &amp;#27;[90m# SearchStepDefs.GetUserInformation(String,String)&amp;#27;[0m
+      &amp;#27;[31mjava.net.UnknownHostException: google.com
+      	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+      	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+      	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+      	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+      	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+      	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+      	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+      	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+      	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+      	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:882)
+      	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+      	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+      	at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
+      	at com.jayway.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:1974)
+      	at com.jayway.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:492)
+      	at com.jayway.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:441)
+      	at com.jayway.restassured.internal.http.HTTPBuilder$request$2.call(Unknown Source)
+      	at com.jayway.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1396)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+      	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+      	at java.lang.reflect.Method.invoke(Method.java:498)
+      	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+      	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+      	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1210)
+      	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019)
+      	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)
+      	at com.jayway.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+      	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+      	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+      	at com.jayway.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1178)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+      	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+      	at java.lang.reflect.Method.invoke(Method.java:498)
+      	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+      	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+      	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1210)
+      	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019)
+      	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)
+      	at com.jayway.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+      	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+      	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:149)
+      	at com.jayway.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+      	at com.jayway.restassured.filter.Filter$filter$0.call(Unknown Source)
+      	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+      	at com.jayway.restassured.filter.Filter$filter.call(Unknown Source)
+      	at com.jayway.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
+      	at com.jayway.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+      	at com.jayway.restassured.filter.Filter$filter.call(Unknown Source)
+      	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+      	at com.jayway.restassured.filter.Filter$filter$0.call(Unknown Source)
+      	at com.jayway.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
+      	at com.jayway.restassured.filter.FilterContext$next.call(Unknown Source)
+      	at com.jayway.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1596)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+      	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+      	at java.lang.reflect.Method.invoke(Method.java:498)
+      	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+      	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+      	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1210)
+      	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019)
+      	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)
+      	at com.jayway.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+      	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+      	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+      	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
+      	at com.jayway.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:160)
+      	at com.jayway.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
+      	at com.kalyan.cucumber.api.RestApiCalls.getCall(RestApiCalls.java:41)
+      	at com.kalyan.cucumber.stepdefs.SearchStepDefs.GetUserInformation(SearchStepDefs.java:20)
+      	at ✽.When I request user information with test2 and pass2(rest-api.feature:4)
+      &amp;#27;[0m
+    &amp;#27;[33mThen &amp;#27;[0m&amp;#27;[33mI should get http respose code as 200&amp;#27;[0m
+    &amp;#27;[33mAnd &amp;#27;[0m&amp;#27;[33mI should get the valid response&amp;#27;[0m
+################################# uploading file/Users/kgogin1/Documents/projects/myopensource-contribution/cucumber-java-xray-automation/target/cucumber/Destination/cucumber.json
+</system-out>
+  </testcase>
+</testsuite>

@@ -29,7 +29,7 @@ public class RunTest {
 
 
     @AfterClass
-    public static void uploadResults(){
+    public static void uploadResults() throws Exception{
         jiraInteraction.importResults(GetSystemProperties.auth, GetSystemProperties.jiraUrl, GetSystemProperties.testResultdir);
     }
 }

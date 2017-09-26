@@ -31,7 +31,6 @@ public class RestApiCalls {
         try {
             responseJson = new JSONObject(responseMessage);
         } catch (JSONException ex) {
-            //this is needed because the get gln by storeId and countryCode response is not valid JSON
         }
     }
 
