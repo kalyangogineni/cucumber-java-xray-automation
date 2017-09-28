@@ -43,4 +43,28 @@ public class RestApiCalls {
 
     }
 
+    public void storeValue(String name, String value) {
+        storedResponseValues.put(name, value);
+    }
+
+    public String retrieveValue(String name) {
+        return storedResponseValues.get(name);
+    }
+
+    public boolean hasValue(String name) {
+        return storedResponseValues.containsKey(name);
+    }
+
+    public int getResponseCode(){
+        return responseCode;
+    }
+    public String getResponseMessage(){
+        return responseMessage;
+    }
+    public JSONObject getResponseJson(){
+        return responseJson;
+    }
+    public String getContentType(){
+        return contentType;
+    }
 }

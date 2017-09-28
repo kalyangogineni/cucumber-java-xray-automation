@@ -14,20 +14,23 @@ import java.io.IOException;
  */
 public class PreRun extends Cucumber {
 
-    public PreRun (Class myclass) throws InitializationError, IOException{
+    public PreRun(Class myclass) throws InitializationError, IOException {
         super(myclass);
     }
 
-    protected Runtime createRuntime(ResourceLoader resourceLoader, ClassLoader classLoader, RuntimeOptions runtimeOptions) throws InitializationError, IOException{
+    protected Runtime createRuntime(ResourceLoader resourceLoader, ClassLoader classLoader, RuntimeOptions runtimeOptions) throws InitializationError, IOException {
 
-
+        if (GetProperties.jiraInteraction.equals("true")) {
             JiraInteraction jiraInteraction = new JiraInteraction();
             try {
-                jiraInteraction.exportTests(GetSystemProperties.auth, GetSystemProperties.jiraUrl, GetSystemProperties.jiraExecutionId, GetSystemProperties.featureFileDir);
-            }catch (Exception e){
+                jiraInteraction.exportTests(GetProperties.auth, GetProperties.jiraUrl, GetProperties.jiraExecutionId, GetProperties.featureFileDir);
+            } catch (Exception e) {
                 e.printStackTrace();
             }
-            return super.createRuntime(resourceLoader, classLoader, runtimeOptions);
 
+        } else {
+            System.out.println("Not downloading tests from jira");
+        }
+        return super.createRuntime(resourceLoader, classLoader, runtimeOptions);
     }
 }

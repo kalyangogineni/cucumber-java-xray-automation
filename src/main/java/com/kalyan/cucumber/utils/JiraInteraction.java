@@ -1,14 +1,9 @@
 package com.kalyan.cucumber.utils;
 
-import com.jayway.restassured.RestAssured;
-import com.jayway.restassured.config.EncoderConfig;
 import com.jayway.restassured.config.RestAssuredConfig;
 import com.jayway.restassured.config.SSLConfig;
-import com.jayway.restassured.http.ContentType;
-import org.json.JSONObject;
 import org.json.simple.JSONArray;
 import org.json.simple.parser.JSONParser;
-
 import java.io.*;
 import java.net.URL;
 import java.net.URLConnection;
@@ -54,7 +49,7 @@ public class JiraInteraction {
         String filePath;
         String currentDir = System.getProperty("user.dir");
         System.out.println(currentDir);
-        String fileFormat = GetSystemProperties.downloadFileFormat;
+        String fileFormat = GetProperties.downloadFileFormat;
         filePath = currentDir+"/"+file;
         if(fileFormat.equals("zip")){
             featureFile = filePath+"/" + "feature.zip";

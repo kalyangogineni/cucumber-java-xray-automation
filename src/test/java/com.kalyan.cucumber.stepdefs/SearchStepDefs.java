@@ -1,7 +1,7 @@
 package com.kalyan.cucumber.stepdefs;
 
 import com.kalyan.cucumber.api.RestApiCalls;
-import com.kalyan.cucumber.utils.GetSystemProperties;
+import com.kalyan.cucumber.utils.GetProperties;
 import cucumber.api.java.en.When;
 
 /**
@@ -16,7 +16,7 @@ public class SearchStepDefs {
     }
     @When("^I request user information with (\\w+) and (\\w+)$")
     public void GetUserInformation(String userName, String Password) throws Throwable {
-        String appUrl = GetSystemProperties.appUrl;
+        String appUrl = GetProperties.appUrl;
         requestManager.getCall(appUrl+"?userName=Test&password=Test","application/json", "test");
 
     }
